@@ -1,0 +1,19 @@
+import type { Metadata } from 'next'
+import './globals.css'
+
+export const metadata: Metadata = {
+  title: 'आनंदगढ़ की कहानी | Anandgarh Story',
+  description: 'राजकुमारी आर्या और वीर की कहानी',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="hi">
+      <body>{children}</body>
+    </html>
+  )
+}
